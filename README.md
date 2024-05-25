@@ -94,10 +94,10 @@ Edit 3D scenes after generating point clouds:
 cd GaussianEditor
 
 # Desk scene
-python webui.py --gs ../gaussian-splatting/output/desk/point_cloud/iteration_30000/point_cloud.ply --colmap_dir ../gaussian-splatting/desk
+python webui.py --gs ../gaussian-splatting/output/desk/point_cloud/iteration_30000/point_cloud.ply --colmap_dir ../desk
 
 # Human scene
-python webui.py --gs ../gaussian-splatting/output/human/point_cloud/iteration_30000/point_cloud.ply --colmap_dir ../gaussian-splatting/human
+python webui.py --gs ../gaussian-splatting/output/human/point_cloud/iteration_30000/point_cloud.ply --colmap_dir ../human
 ```
 
 For detailed guidance on using the webUI, refer to [this guide](https://github.com/buaacyw/GaussianEditor/blob/master/docs/webui.md).
@@ -113,9 +113,7 @@ Use specific prompts to delete objects:
 
 Add objects by generating and refining inpainting results:
 
-- **Apple**: Use `a red apple on the table` followed by `make it a realistic
-
- apple`.
+- **Apple**: Use `a red apple on the table` followed by `make it a realistic apple`.
 - **Teddy Bear**: Use `a teddy bear on the ground` followed by `make it a realistic teddy bear`.
 
 ### D-3. Object Editing
