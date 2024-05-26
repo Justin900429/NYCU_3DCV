@@ -23,8 +23,10 @@ gdown 1Jrh-bRnJEjyMCS7f-WsaFlccfPjJPPHI -O ./cache/dpt
 ### B-1. Download Videos
 
 Access our dataset via Google Drive:
-- [Link 1](https://drive.google.com/file/d/11rxX2uWAcH4LKjtvq2zpUIfofpWybNYe/view?usp=drive_link)
-- [Link 2](https://drive.google.com/file/d/1v1g1wYLPhPfpK3pXnwT7FQRD1UAE-zbX/view?usp=drive_link)
+| Video        | Description | Time (s) |
+| ------------ | ----------- | -------- |
+| IMG_1991.MOV | Desk scene  | ~80      |
+| IMG_1992.MOV | Human scene | ~30      |
 
 Or download directly using:
 
@@ -74,6 +76,8 @@ The following structure will be created in the `desk` and `human` folders:
 ┗ 📂 (other auxiliary files)
 ```
 
+Note that our `convert.py` is different from that in `gaussian_splatting`. We have modified the `ImageMagick` command to fit the latest version.
+
 ### C-2. Constructing Gaussian Splatting
 
 Run the Gaussian splatting training script:
@@ -100,7 +104,7 @@ python webui.py --gs ../gaussian-splatting/output/desk/point_cloud/iteration_300
 python webui.py --gs ../gaussian-splatting/output/human/point_cloud/iteration_30000/point_cloud.ply --colmap_dir ../human
 ```
 
-For detailed guidance on using the webUI, refer to [this guide](https://github.com/buaacyw/GaussianEditor/blob/master/docs/webui.md).
+For detailed guidance on using the webUI, refer to [this guide](https://github.com/buaacyw/GaussianEditor/blob/master/docs/webui.md). Note our `webui.py` is different from the official one, we support single camera tracing and negative depth scale.
 
 ### D-1. Object Deleting
 
