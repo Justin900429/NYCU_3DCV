@@ -104,7 +104,7 @@ python webui.py --gs ../gaussian-splatting/output/desk/point_cloud/iteration_300
 python webui.py --gs ../gaussian-splatting/output/human/point_cloud/iteration_30000/point_cloud.ply --colmap_dir ../human
 ```
 
-For detailed guidance on using the webUI, refer to [this guide](https://github.com/buaacyw/GaussianEditor/blob/master/docs/webui.md). Note our `webui.py` is different from the official one, we support single camera tracing and negative depth scale.
+For detailed guidance on using the webUI, refer to [this guide](https://github.com/buaacyw/GaussianEditor/blob/master/docs/webui.md). Note that our `webui.py` is different from the official one, we support single camera tracing and negative depth scale.
 
 ### D-1. Object Deleting
 
